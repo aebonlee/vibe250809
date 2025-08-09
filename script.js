@@ -46,4 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
     dynamicText.textContent = '';
     setTimeout(type, 1000); // Delay start of typing
 
+    // --- Scroll to top button ---
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }   );  
 });
